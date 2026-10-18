@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S. V. Collection | Beauty, Gifts & More</title>
+<style>
+:root{--ink:#201b25;--muted:#746c77;--pink:#d84f83;--rose:#fff0f5;--gold:#c79a4a;--line:#eee5eb;--bg:#fffafc}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:white}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:999px;padding:12px 17px;font-weight:700}.top{background:#231b28;color:white;text-align:center;padding:9px;font-size:12px;letter-spacing:.08em}.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 5%;border-bottom:1px solid var(--line);gap:12px;position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(10px);z-index:4}.brand{font-family:Georgia,serif;font-size:25px;font-weight:bold;letter-spacing:.04em}.brand span{color:var(--pink)}.navright{display:flex;gap:8px;align-items:center}.outline{background:white;border:1px solid var(--line);color:var(--ink)}.primary{background:var(--pink);color:white}.hero{padding:55px 5%;background:linear-gradient(120deg,#fff3f7,#fffaf0 60%,#f8eef8);display:grid;grid-template-columns:1.05fr .95fr;gap:35px;align-items:center}.eyebrow{color:var(--pink);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.hero h1{font-family:Georgia,serif;font-size:clamp(38px,5.2vw,66px);line-height:1.03;margin:16px 0}.hero p{color:var(--muted);line-height:1.7;max-width:520px}.hero img{width:100%;height:350px;object-fit:cover;border-radius:28px;box-shadow:0 22px 50px #6d39501b}.section{padding:36px 5%}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:22px}.section h2{font: bold 32px Georgia,serif;margin:6px 0}.muted{color:var(--muted)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.chip{background:#fff;border:1px solid var(--line);padding:9px 14px;color:var(--muted)}.chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.product{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:white;transition:.2s}.product:hover{transform:translateY(-3px);box-shadow:0 12px 30px #39233710}.product img{width:100%;height:220px;object-fit:cover;background:var(--rose)}.sale-badge{display:inline-block;background:#c62845;color:#fff;padding:5px 9px;border-radius:999px;font-size:10px;font-weight:800;letter-spacing:.04em;margin-bottom:7px}.stock-badge{display:inline-block;background:#e7f6eb;color:#216e39;padding:5px 9px;border-radius:999px;font-size:10px;font-weight:800;margin-bottom:7px}.stock-badge.out{background:#fce8e8;color:#a12626}.oldprice{text-decoration:line-through;color:#938993;font-size:12px;font-weight:500;margin-right:6px}.stock-admin{font-size:12px;font-weight:800}.pbody{padding:14px}.tag{font-size:10px;color:var(--pink);font-weight:800;letter-spacing:.1em;text-transform:uppercase}.pbody h3{font-size:15px;margin:7px 0}.desc{font-size:12px;color:var(--muted);min-height:32px;line-height:1.5}.price{font-weight:800;font-size:18px;margin:12px 0}.price small{text-decoration:line-through;color:#a69ba5;font-size:12px;font-weight:400;margin-left:6px}.pactions{display:flex;gap:7px}.pactions button{flex:1;padding:10px 8px;font-size:12px}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;padding:0 5% 42px}.benefit{background:var(--bg);border-radius:16px;padding:20px}.benefit b{display:block;margin-bottom:7px}.footer{background:#251d29;color:#fff;padding:30px 5%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer p{color:#c8bdc8;font-size:13px}.overlay{position:fixed;inset:0;background:#140d1680;z-index:10;display:none;justify-content:flex-end}.overlay.show{display:flex}.drawer{background:#fff;width:min(480px,100%);height:100%;overflow:auto;padding:24px}.drawhead{display:flex;justify-content:space-between;align-items:center}.cartrow{display:grid;grid-template-columns:65px 1fr auto;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);align-items:center}.cartrow img{width:65px;height:65px;object-fit:cover;border-radius:12px}.qty{display:flex;align-items:center;gap:9px;margin-top:7px}.qty button{padding:4px 10px;background:#f7edf2}.total{display:flex;justify-content:space-between;font-weight:800;font-size:20px;padding:20px 0}.field{display:block;margin:12px 0}.field label{font-size:12px;font-weight:700;display:block;margin-bottom:6px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:12px;background:white}.full{width:100%;border-radius:12px}.small{font-size:12px}.admin{background:#f7f4f7;padding:18px;border-radius:16px;margin-top:20px}.admin h3{margin-top:0}.hidden{display:none!important}.notice{padding:12px;background:#fff5d9;border-radius:12px;font-size:12px;line-height:1.5}.modal{position:fixed;inset:0;background:#140d1680;display:none;align-items:center;justify-content:center;z-index:12;padding:16px}.modal.show{display:flex}.modalbox{background:white;padding:25px;border-radius:20px;width:min(600px,100%);max-height:90vh;overflow:auto}.search{padding:10px 14px;border:1px solid var(--line);border-radius:999px;width:min(220px,45vw)}.morewrap{position:relative}.morebtn{background:white;border:1px solid var(--line);color:var(--ink);font-size:22px;line-height:1;padding:9px 13px}.moremenu{display:none;position:absolute;right:0;top:calc(100% + 8px);min-width:175px;background:white;border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 35px #201b2520;padding:7px;z-index:20}.moremenu.show{display:block}.moremenu button{width:100%;text-align:left;border-radius:9px;background:white;color:var(--ink);padding:11px 12px}.moremenu button:hover{background:var(--rose)}@media(max-width:900px){.products{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr;padding-top:35px}.hero img{height:260px}.benefits{grid-template-columns:1fr}.nav{padding:14px 4%}.brand{font-size:20px}.section{padding:28px 4%}}@media(max-width:420px){.products{gap:10px}.product img{height:160px}.pbody{padding:10px}.pactions{flex-direction:column}.navright button{padding:10px 12px}.hero img{height:220px}}
+</style></head>
+<body>
+<div class="top">A LITTLE BEAUTY, A LOT OF JOY · SHOP BEAUTY, GIFTS & MORE</div>
+<header class="nav"><div class="brand">S. V. <span>Collection</span></div><div class="navright"><button class="primary" onclick="openCart()">Bag <span id="bagcount">0</span></button><div class="morewrap"><button class="morebtn" aria-label="More options" aria-expanded="false" onclick="toggleMoreMenu(event)">⋮</button><div class="moremenu" id="moreMenu"><button onclick="openAdminFromMenu()">Admin login</button></div></div></div></header>
+<section class="hero"><div><div class="eyebrow">Your everyday happy place</div><h1>Little things.<br>Lovely moments.</h1><p>Discover beauty favourites, thoughtful gifts and everyday treasures — picked to make you and your loved ones smile.</p><button class="primary" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Explore collection&nbsp; ↗</button><p class="small">Easy ordering · UPI payment · Personal service</p></div><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=85" alt="Beauty products collection"></section>
+<section class="section" id="shop"><div class="sectionhead"><div><div class="eyebrow">Curated for you</div><h2>Shop the collection</h2><div class="muted">Find your next favourite.</div></div><input id="search" class="search" placeholder="Search products…" oninput="renderProducts()"></div><div class="filters" id="filters"></div><div class="products" id="products"></div></section>
+<section class="benefits"><div class="benefit"><b>♡ Thoughtful finds</b><span class="muted small">Beauty essentials and gifts for every occasion.</span></div><div class="benefit"><b>✧ Simple ordering</b><span class="muted small">Add to bag and send your order directly to us.</span></div><div class="benefit"><b>₹ UPI payment</b><span class="muted small">Pay using the UPI details confirmed by the store.</span></div></section>
+<footer class="footer"><div><div class="brand">S. V. <span>Collection</span></div><p>Beauty · Gifts · Everyday essentials</p></div><div><b>Need help?</b><p>WhatsApp orders: 7974282896</p><p>Prices and availability are confirmed when ordering.</p></div></footer>
+<div class="overlay" id="cartOverlay" onclick="if(event.target===this)closeCart()"><aside class="drawer"><div class="drawhead"><h2>Your shopping bag</h2><button class="outline" onclick="closeCart()">✕</button></div><div id="cartitems"></div><div class="total"><span>Total</span><span id="carttotal">₹0</span></div><button class="primary full" onclick="openCheckout()">Continue to checkout</button><p class="muted small">Your order will be sent to the store on WhatsApp. Payment is not collected automatically on this demo site.</p></aside></div>
+<div class="modal" id="checkoutModal"><div class="modalbox"><div class="drawhead"><h2>Delivery details</h2><button class="outline" onclick="closeCheckout()">✕</button></div><form id="checkoutForm" onsubmit="placeOrder(event)"><div class="field"><label>Full name</label><input id="custname" required placeholder="Your name"></div><div class="field"><label>Mobile number</label><input id="custphone" required pattern="[0-9]{10}" placeholder="10-digit mobile number"></div><div class="field"><label>Delivery address</label><textarea id="custaddress" required rows="3" placeholder="House, street, area, city, PIN code"></textarea></div><div class="field"><label>Payment preference</label><select id="paymethod"><option>UPI (confirm details with store)</option><option>UPI QR (request from store)</option><option>Pay on confirmation</option></select></div><div class="notice">This storefront has no verified UPI ID or payment gateway connected yet. Please confirm payment details with the store before transferring money.</div><p class="total"><span>Order total</span><span id="checkouttotal">₹0</span></p><button class="primary full" type="submit">Place order on WhatsApp ↗</button></form></div></div>
+<div class="modal" id="adminModal"><div class="modalbox"><div class="drawhead"><h2>Store manager</h2><button class="outline" onclick="closeAdmin()">✕</button></div><div id="adminLogin"><p class="muted" id="adminLoginHint">Enter your admin password to manage products and orders.</p><div class="field"><label>Admin password</label><input id="adminpass" type="password" placeholder="Enter your password" autocomplete="current-password"></div><button class="primary full" onclick="loginAdmin()">Open manager</button><button class="outline full" style="margin-top:10px" onclick="showPasswordSetup()">Set / change my password</button><div id="passwordSetup" class="admin hidden"><h3>Create your own admin password</h3><p class="muted small">Choose a password and keep it private.</p><div class="field" id="currentPasswordField"><label>Current password</label><input id="currentadminpass" type="password" placeholder="Enter current password" autocomplete="current-password"></div><div class="field"><label>New password</label><input id="newadminpass" type="password" placeholder="Create password" autocomplete="new-password"></div><div class="field"><label>Confirm password</label><input id="confirmadminpass" type="password" placeholder="Re-enter password" autocomplete="new-password"></div><button class="primary full" onclick="saveAdminPassword()">Save my password</button><button class="outline full" style="margin-top:8px" onclick="hidePasswordSetup()">Cancel</button></div></div><div id="adminPanel" class="hidden"><div class="notice">Demo mode: products and orders are stored only in this browser. For a live shop, connect a secure database and protected admin login.</div><h3 id="productFormTitle">Add product</h3><p class="muted small" id="editProductHint">Add a new product here. To change an existing product, tap Edit beside it below.</p><div class="field"><label>Product name</label><input id="newname" placeholder="Product name"></div><div class="field"><label>Category</label><select id="newcat"><option>Makeup</option><option>Skincare</option><option>Gift Items</option><option>Accessories</option><option>Other</option></select></div><div class="field"><label>MRP / Original price (₹)</label><input id="newmrp" type="number" min="0" placeholder="499"></div><div class="field"><label>Selling price (₹)</label><input id="newprice" type="number" min="1" placeholder="299"></div><div class="field"><label>Stock status</label><select id="newstock"><option value="in">In stock</option><option value="out">Out of stock</option></select></div><div class="field"><label>Short details</label><input id="newdesc" placeholder="Colour, size, contents…"></div><div class="field"><label>Upload product photo from your phone / computer</label><input id="newphoto" type="file" accept="image/*"><p class="muted small">Choose the actual photo of your product. It will be resized to help keep the website file size manageable.</p></div><div class="field"><label>Or paste Photo URL (optional)</label><input id="newimg" placeholder="https://…"></div><button class="primary full" id="saveProductBtn" onclick="addProduct()">Add product with photo</button><button class="outline full hidden" id="cancelEditBtn" style="margin-top:8px" onclick="cancelProductEdit()">Cancel editing</button><h3>Products</h3><div id="adminProducts"></div><h3>Orders on this browser</h3><div id="adminOrders"></div><button class="outline full" onclick="logoutAdmin()">Lock manager</button></div></div></div>
+<script>
+const WA='917974282896';
+const seed=[
+{id:1,name:'Everyday Makeup Set',cat:'Makeup',price:499,desc:'A lovely starter set for everyday looks.',img:'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80'},
+{id:2,name:'Lipstick Favourite',cat:'Makeup',price:199,desc:'A handbag-friendly beauty essential.',img:'https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=700&q=80'},
+{id:3,name:'Skincare Treat',cat:'Skincare',price:349,desc:'A self-care pick for your daily routine.',img:'https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=700&q=80'},
+{id:4,name:'Gift Box Surprise',cat:'Gift Items',price:599,desc:'A sweet gift for birthdays and celebrations.',img:'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=700&q=80'},
+{id:5,name:'Cute Plush Gift',cat:'Gift Items',price:399,desc:'A cuddly surprise for someone special.',img:'https://images.unsplash.com/photo-1559454403-b8fb88521f11?auto=format&fit=crop&w=700&q=80'},
+{id:6,name:'Fashion Accessories',cat:'Accessories',price:249,desc:'Little finishing touches for your style.',img:'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80'},
+{id:7,name:'Mini Beauty Essentials',cat:'Makeup',price:279,desc:'Compact picks for your everyday bag.',img:'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80'},
+{id:8,name:'Celebration Gift Hamper',cat:'Gift Items',price:799,desc:'A cheerful hamper for special moments.',img:'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=700&q=80'}
+];
+seed.forEach(p=>{if(!p.mrp)p.mrp=p.price;if(!p.stock)p.stock='in'});
+let products=JSON.parse(localStorage.getItem('sv_products')||'null')||seed;
+products.forEach(p=>{if(!p.mrp)p.mrp=p.price;if(!p.stock)p.stock='in'});
+let cart=JSON.parse(sessionStorage.getItem('sv_cart')||'{}');let category='All';let orders=JSON.parse(localStorage.getItem('sv_orders')||'[]');
+const ru=n=>'₹'+Number(n).toLocaleString('en-IN');
+function saveProducts(){localStorage.setItem('sv_products',JSON.stringify(products))}
+function renderFilters(){let cats=['All',...new Set(products.map(p=>p.cat))];document.getElementById('filters').innerHTML=cats.map(c=>`<button class="chip ${category===c?'active':''}" onclick="category='${c.replace(/'/g,"\\'")}';renderFilters();renderProducts()">${c}</button>`).join('')}
+function renderProducts(){let q=document.getElementById('search').value.toLowerCase();let list=products.filter(p=>(category==='All'||p.cat===category)&&(p.name+' '+p.desc+' '+p.cat).toLowerCase().includes(q));document.getElementById('products').innerHTML=list.length?list.map(p=>{let mrp=Number(p.mrp||p.price),sale=mrp>Number(p.price),off=sale?Math.round((mrp-Number(p.price))*100/mrp):0,out=p.stock==='out';return `<article class="product"><img src="${esc(p.img||'')}" alt="${esc(p.name)}" onerror="this.src='https://placehold.co/600x500/fff0f5/9e5472?text=SV+Collection'"><div class="pbody">${sale?`<div class="sale-badge">${off}% OFF</div>`:''}<div><span class="stock-badge ${out?'out':''}">${out?'OUT OF STOCK':'IN STOCK'}</span></div><div class="tag">${esc(p.cat)}</div><h3>${esc(p.name)}</h3><div class="desc">${esc(p.desc)}</div><div class="price">${ru(p.price)} ${sale?`<small class="oldprice">${ru(mrp)}</small>`:''}</div><div class="pactions"><button class="outline" onclick="details(${p.id})">Details</button><button class="${out?'outline':'primary'}" ${out?'disabled':''} onclick="${out?'alert(\'This product is currently out of stock.\')':`addCart(${p.id})`}">${out?'Out of stock':'Add to bag +'}</button></div></div></article>`}).join(''):'<p class="muted">No products found. Try another search.</p>'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function details(id){let p=products.find(x=>x.id===id);alert(p.name+'\\n\\n'+p.desc+'\\nCategory: '+p.cat+'\\nPrice: '+ru(p.price))}
+function addCart(id){cart[id]=(cart[id]||0)+1;saveCart();openCart()}
+function saveCart(){sessionStorage.setItem('sv_cart',JSON.stringify(cart));document.getElementById('bagcount').textContent=Object.values(cart).reduce((a,b)=>a+b,0)}
+function openCart(){document.getElementById('cartOverlay').classList.add('show');renderCart()}function closeCart(){document.getElementById('cartOverlay').classList.remove('show')}
+function renderCart(){let items=products.filter(p=>cart[p.id]);document.getElementById('cartitems').innerHTML=items.length?items.map(p=>`<div class="cartrow"><img src="${esc(p.img)}" onerror="this.style.visibility='hidden'"><div><b>${esc(p.name)}</b><div class="muted small">${ru(p.price)} each</div><div class="qty"><button onclick="changeQty(${p.id},-1)">−</button><span>${cart[p.id]}</span><button onclick="changeQty(${p.id},1)">+</button></div></div><b>${ru(p.price*cart[p.id])}</b></div>`).join(''):'<p class="muted">Your bag is empty. Add something lovely!</p>';document.getElementById('carttotal').textContent=ru(total());document.getElementById('checkouttotal').textContent=ru(total());saveCart()}
+function changeQty(id,n){cart[id]=(cart[id]||0)+n;if(cart[id]<=0)delete cart[id];saveCart();renderCart()}function total(){return products.reduce((s,p)=>s+p.price*(cart[p.id]||0),0)}
+function openCheckout(){if(!total()){alert('Your bag is empty.');return}closeCart();document.getElementById('checkoutModal').classList.add('show');document.getElementById('checkouttotal').textContent=ru(total())}function closeCheckout(){document.getElementById('checkoutModal').classList.remove('show')}
+function placeOrder(e){e.preventDefault();let items=products.filter(p=>cart[p.id]).map(p=>`${p.name} x ${cart[p.id]} = ${ru(p.price*cart[p.id])}`);let name=document.getElementById('custname').value,phone=document.getElementById('custphone').value,address=document.getElementById('custaddress').value,pay=document.getElementById('paymethod').value;let oid='SV'+Date.now().toString().slice(-7);let order={id:oid,date:new Date().toLocaleString(),name,phone,address,pay,items,total:total()};orders.unshift(order);localStorage.setItem('sv_orders',JSON.stringify(orders));let msg=`Hello S. V. Collection! I would like to place order ${oid}.%0A%0A${encodeURIComponent(items.join('\n'))}%0A%0ATotal: ${encodeURIComponent(ru(order.total))}%0A%0ACustomer: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ADelivery address: ${encodeURIComponent(address)}%0APayment preference: ${encodeURIComponent(pay)}%0APlease confirm availability and UPI payment details.`;cart={};saveCart();closeCheckout();window.open('https://wa.me/'+WA+'?text='+msg,'_blank');alert('Your order message is ready in WhatsApp. Please press Send there to submit your order.')}
+function toggleMoreMenu(event){event.stopPropagation();const menu=document.getElementById('moreMenu');const open=menu.classList.toggle('show');document.querySelector('.morebtn').setAttribute('aria-expanded',String(open))}
+function closeMoreMenu(){const menu=document.getElementById('moreMenu');if(menu)menu.classList.remove('show');const btn=document.querySelector('.morebtn');if(btn)btn.setAttribute('aria-expanded','false')}
+function openAdminFromMenu(){closeMoreMenu();openAdmin()}
+document.addEventListener('click',closeMoreMenu);
+function openAdmin(){document.getElementById('adminModal').classList.add('show');document.getElementById('adminpass').value='';document.getElementById('adminLoginHint').textContent=localStorage.getItem('sv_admin_password')?'Enter your admin password to manage products and orders.':'No admin password is set yet. Choose “Set / change my password” first.'}
+function closeAdmin(){document.getElementById('adminModal').classList.remove('show')}
+function showPasswordSetup(){
+ const hasPassword=!!localStorage.getItem('sv_admin_password');
+ document.getElementById('passwordSetup').classList.remove('hidden');
+ document.getElementById('currentPasswordField').classList.toggle('hidden',!hasPassword);
+ document.getElementById('currentadminpass').value='';
+ document.getElementById('newadminpass').value='';
+ document.getElementById('confirmadminpass').value='';
+}
+function hidePasswordSetup(){document.getElementById('passwordSetup').classList.add('hidden');['currentadminpass','newadminpass','confirmadminpass'].forEach(id=>document.getElementById(id).value='')}
+function saveAdminPassword(){
+ let saved=localStorage.getItem('sv_admin_password');
+ let current=document.getElementById('currentadminpass').value;
+ let p=document.getElementById('newadminpass').value,c=document.getElementById('confirmadminpass').value;
+ if(saved && current!==saved){alert('Current password is incorrect. Your password has not been changed.');return}
+ if(p.length<8){alert('Please choose at least 8 characters.');return}
+ if(p!==c){alert('Passwords do not match.');return}
+ localStorage.setItem('sv_admin_password',p);
+ document.getElementById('adminLoginHint').textContent='Your password is saved in this browser. Enter it to open the manager.';
+ document.getElementById('adminpass').value='';
+ hidePasswordSetup();
+ alert(saved?'Your admin password has been changed.':'Your admin password has been set.');
+}
+function loginAdmin(){let saved=localStorage.getItem('sv_admin_password');if(!saved){alert('First set your own password using “Set / change my password”.');showPasswordSetup();return}if(document.getElementById('adminpass').value!==saved){alert('Incorrect password.');return}document.getElementById('adminLogin').classList.add('hidden');document.getElementById('adminPanel').classList.remove('hidden');renderAdmin()}
+function logoutAdmin(){document.getElementById('adminLogin').classList.remove('hidden');document.getElementById('adminPanel').classList.add('hidden');document.getElementById('adminpass').value=''}
+/* Owner entry: no public Admin button. Open the owner panel by adding #sv-owner-admin to the site URL. */
+function checkOwnerRoute(){if(location.hash==='#sv-owner-admin')openAdmin()}
+window.addEventListener('hashchange',checkOwnerRoute);
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',checkOwnerRoute)}else{checkOwnerRoute()}
+function compressProductPhoto(file){
+ return new Promise((resolve,reject)=>{
+  if(!file || !file.type.startsWith('image/')){reject(new Error('Please choose an image file.'));return}
+  const reader=new FileReader();
+  reader.onerror=()=>reject(new Error('Could not read this photo. Please try another image.'));
+  reader.onload=()=>{
+   const img=new Image();
+   img.onerror=()=>reject(new Error('Could not open this photo. Please try another image.'));
+   img.onload=()=>{
+    const max=1000,scale=Math.min(1,max/Math.max(img.width,img.height));
+    const canvas=document.createElement('canvas');
+    canvas.width=Math.max(1,Math.round(img.width*scale));canvas.height=Math.max(1,Math.round(img.height*scale));
+    const ctx=canvas.getContext('2d');ctx.fillStyle='#ffffff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(img,0,0,canvas.width,canvas.height);
+    resolve(canvas.toDataURL('image/jpeg',0.78));
+   };
+   img.src=reader.result;
+  };
+  reader.readAsDataURL(file);
+ });
+}
+let editingProductId=null;
+function editProduct(id){
+ const p=products.find(x=>x.id===id); if(!p)return; editingProductId=id;
+ document.getElementById("newname").value=p.name||"";
+ document.getElementById("newcat").value=p.cat||"Other";
+ document.getElementById("newmrp").value=Number(p.mrp||p.price);
+ document.getElementById("newprice").value=Number(p.price||0);
+ document.getElementById("newstock").value=p.stock||"in";
+ document.getElementById("newdesc").value=p.desc||"";
+ document.getElementById("newimg").value=(p.img||"").startsWith("data:")?"":(p.img||"");
+ document.getElementById("newphoto").value="";
+ document.getElementById("productFormTitle").textContent="Edit product";
+ document.getElementById("editProductHint").textContent="Update any detail below. If you do not choose a new photo or enter a new photo URL, the current photo will be kept.";
+ document.getElementById("saveProductBtn").textContent="Save product changes";
+ document.getElementById("cancelEditBtn").classList.remove("hidden");
+ document.getElementById("productFormTitle").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function cancelProductEdit(){
+ editingProductId=null;
+ ["newname","newmrp","newprice","newdesc","newimg"].forEach(id=>document.getElementById(id).value="");
+ document.getElementById("newcat").selectedIndex=0; document.getElementById("newstock").value="in"; document.getElementById("newphoto").value="";
+ document.getElementById("productFormTitle").textContent="Add product";
+ document.getElementById("editProductHint").textContent="Add a new product here. To change an existing product, tap Edit beside it below.";
+ document.getElementById("saveProductBtn").textContent="Add product with photo";
+ document.getElementById("cancelEditBtn").classList.add("hidden");
+}
+async function addProduct(){
+ let name=document.getElementById('newname').value.trim(),price=Number(document.getElementById('newprice').value),mrp=Number(document.getElementById('newmrp').value||price);
+ if(!name||price<=0){alert('Enter a product name and valid selling price.');return}
+ if(mrp<price){alert('MRP should be equal to or higher than the selling price.');return}
+ const photoInput=document.getElementById('newphoto'),file=photoInput.files&&photoInput.files[0];
+ const enteredUrl=document.getElementById('newimg').value.trim();
+ const existing=editingProductId!==null?products.find(p=>p.id===editingProductId):null;
+ let img=enteredUrl || (existing?existing.img:'https://placehold.co/600x500/fff0f5/9e5472?text=SV+Collection');
+ try{
+  if(file) img=await compressProductPhoto(file);
+  const product={id:existing?existing.id:Date.now(),name,cat:document.getElementById('newcat').value,price,mrp,stock:document.getElementById('newstock').value,desc:document.getElementById('newdesc').value.trim()||'Ask us for product details.',img};
+  if(existing){
+   const index=products.findIndex(p=>p.id===editingProductId);
+   const previous=products[index]; products[index]=product;
+   try{saveProducts()}catch(storageError){products[index]=previous;alert('This photo or product list is too large for browser storage. Try a smaller photo.');return}
+  }else{
+   products.unshift(product);
+   try{saveProducts()}catch(storageError){products.shift();alert('This photo or product list is too large for browser storage. Try a smaller photo.');return}
+  }
+  renderFilters();renderProducts();renderAdmin();
+  const wasEditing=editingProductId!==null;
+  cancelProductEdit();
+  if(!wasEditing){document.getElementById('newcat').selectedIndex=0;}
+  alert(wasEditing?'Product updated successfully.':'Product added successfully.');
+ }catch(err){alert(err.message||'Could not save product. Please try again.')}
+}
+function deleteProduct(id){if(confirm('Remove this product?')){products=products.filter(p=>p.id!==id);saveProducts();renderFilters();renderProducts();renderAdmin()}}
+function toggleStock(id){const p=products.find(x=>x.id===id);if(!p)return;p.stock=p.stock==='out'?'in':'out';saveProducts();renderProducts();renderAdmin()}
+function renderAdmin(){document.getElementById('adminProducts').innerHTML=products.map(p=>`<div style="padding:10px 0;border-bottom:1px solid #eee;display:flex;align-items:center;justify-content:space-between;gap:8px"><div style="display:flex;align-items:center;gap:10px;min-width:0"><img src="${esc(p.img||'')}" alt="" onerror="this.style.visibility='hidden'" style="width:48px;height:48px;object-fit:cover;border-radius:8px;flex-shrink:0"><div><b>${esc(p.name)}</b><div class="small">${ru(p.price)} selling · MRP ${ru(p.mrp||p.price)}</div><div class="stock-admin" style="color:${p.stock==='out'?'#a12626':'#216e39'}">${p.stock==='out'?'OUT OF STOCK':'IN STOCK'}</div></div></div><div style="display:flex;flex-direction:column;gap:6px"><button class="primary" style="font-size:11px;padding:8px" onclick="editProduct(${p.id})">Edit details / photo</button><button class="outline" style="font-size:11px;padding:8px" onclick="toggleStock(${p.id})">${p.stock==='out'?'Mark in stock':'Mark out of stock'}</button><button class="outline" style="font-size:11px;padding:8px" onclick="deleteProduct(${p.id})">Remove</button></div></div>`).join('');document.getElementById('adminOrders').innerHTML=orders.length?orders.map(o=>`<div style="padding:12px 0;border-bottom:1px solid #eee"><b>${esc(o.id)} · ${ru(o.total)}</b><p class="small">${esc(o.name)} · ${esc(o.phone)}<br>${esc(o.date)}<br>${o.items.map(esc).join('<br>')}<br>${esc(o.address)}<br><span class="muted">Payment: ${esc(o.pay||'Not specified')}</span></p><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="primary" style="font-size:12px;padding:9px 12px" onclick="removeOrder(${JSON.stringify(o.id)},'delivered')">Delivered · Remove</button><button class="outline" style="font-size:12px;padding:9px 12px" onclick="removeOrder(${JSON.stringify(o.id)},'rejected')">Rejected · Remove</button><button class="outline" style="font-size:12px;padding:9px 12px" onclick="removeOrder(${JSON.stringify(o.id)},'delete')">Delete</button></div></div>`).join(''):'<p class="muted small">No orders saved in this browser yet.</p>'}
+function removeOrder(id,action){
+ const label=action==='delivered'?'mark this order as delivered and remove it':action==='rejected'?'reject and remove this order':'permanently delete this order';
+ if(!confirm('Are you sure you want to '+label+' from order history?'))return;
+ orders=orders.filter(o=>String(o.id)!==String(id));
+ localStorage.setItem('sv_orders',JSON.stringify(orders));
+ renderAdmin();
+}
+renderFilters();renderProducts();saveCart();
+</script></body></html>
